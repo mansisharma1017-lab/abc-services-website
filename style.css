@@ -1,0 +1,282 @@
+/* GLOBAL RESET */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f1ee;
+    color: #2c2c2c;
+}
+
+/* HERO SECTION - ROYAL LOOK */
+.hero {
+    background: linear-gradient(135deg, #1f1c2c, #3a2c5f);
+    color: #f5f5f5;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 46px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 19px;
+    max-width: 700px;
+    margin: auto;
+    opacity: 0.9;
+}
+
+.hero button {
+    margin-top: 30px;
+    padding: 14px 34px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #d4af37; /* gold */
+    color: #1f1c2c;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #c19b2e;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 36px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1ebc59;
+}
+
+
+/* SECTION CARDS */
+.section {
+    background-color: #ffffff;
+    margin: 40px auto;
+    padding: 35px;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* SERVICES CARDS */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.service-card {
+    background-color: #f9f8f6;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+}
+
+.service-card h3 {
+    margin-top: 0;
+    color: #3a2c5f;
+    font-size: 22px;
+}
+
+.service-card p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* HEADINGS */
+.section h2 {
+    margin-top: 0;
+    font-size: 30px;
+    color: #3a2c5f;
+    position: relative;
+}
+
+.section h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #d4af37;
+    display: block;
+    margin-top: 8px;
+}
+
+/* TEXT */
+.section p,
+.section li {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* LIST STYLE */
+.section ul {
+    padding-left: 20px;
+}
+
+.section li {
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #1f1c2c;
+    color: #ccc;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+/* PRICING SECTION */
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.pricing-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+}
+
+.pricing-card h3 {
+    font-size: 24px;
+    color: #3a2c5f;
+}
+
+.price {
+    font-size: 36px;
+    font-weight: bold;
+    color: #d4af37;
+    margin: 20px 0;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-card ul li {
+    margin: 12px 0;
+    font-size: 15px;
+}
+
+.price-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background-color: #3a2c5f;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.price-btn:hover {
+    background-color: #1f1c2c;
+}
+
+/* POPULAR PLAN */
+.popular {
+    border: 3px solid #d4af37;
+    transform: scale(1.05);
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #1f1c2c;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.menu a:hover {
+    color: #d4af37;
+}
+
+/* HAMBURGER */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #1f1c2c;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .menu a {
+        display: block;
+        padding: 15px 0;
+        border-top: 1px solid #333;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu.show {
+        display: block;
+    }
+}
